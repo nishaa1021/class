@@ -1,0 +1,115 @@
+<?php
+    if(isset($_POST['admision']))
+    {
+        header("Location:/task/admisionform.php");
+    }
+    if(isset($_POST['surrounding']))
+    {
+        header("Location:/task/surrounding.php");
+    }
+    if(isset($_POST['subject']))
+    {
+        header("Location:/task/sub.php");
+    }
+?>
+<html>
+    <head>
+        <style>
+            body{
+                background-image:url(/task/images/bench.webp);
+                background-repeat:no-repeat;
+                background-size:1025px;
+            }
+            h1{
+                color:brown;
+                text-align:center;
+                font-size:100px;
+            }
+            #d1{
+                width:45%;
+                float:left;
+                height:155px;
+                /* border:2px solid black; */
+                text-align:center;
+            }
+            #d2{
+                width:50%;
+                float:right;
+                height:155px;
+                text-align:center;
+                /* border:2px solid black; */
+                text-align:center;
+            }
+            #d3{
+                text-align:center;
+                margin-left:100px;
+                margin-top:100px;
+                width:30%;
+                float:left;
+                font-size:30px;
+                color:pink;
+                background-color:black;
+                padding:10px;
+            }
+            #d4{
+                text-align:left;
+                margin-right:100px;
+                margin-top:100px;
+                width:40%;
+                float:right;
+                font-size:20px;
+                color:pink;
+                background-color:black;
+                padding:10px;
+            }
+            #img1{
+                height:100px;
+                width:100px;
+            }
+            .img{
+                height:40px;
+                width:40px;
+            }
+            .btn{
+                width:100px;
+                height:35px;
+                background-color:skyblue;
+                color:brown;
+            }
+            .btn:hover{
+                width:150px;
+                height:50px;
+                background-color:pink;
+                color:darkblue;
+                font-size:20px;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="" method=post>
+            <h1>Namrata class</h1>
+            <div id="d1">
+                <h2>About class</h2>
+                <input type="submit" name="surrounding" id="" value="Class surrounding" class="btn"><br><br>
+                <input type="submit" name="subject" id="" value="subject & fees" class="btn">
+            </div>
+            <div id="d2">
+                <h2>Admision open</h2>
+                <p>Admision forms are available here</p>
+                <input type="submit" name="admision" id="" value="Admision" class="btn">
+            </div>
+            <div id="d3">
+                <img src="/nisha/images/location.png" alt="" id="img1"><br>
+                Address : link road, kedgao, A.nagar
+            </div>
+            <div id="d4">
+                <img src="/nisha/images/call.jpg" alt="" class="img">
+                contact no : 8983895168 <br>
+                <img src="/nisha/images/mail.jpg" alt="" class="img">
+                Email id : nisha1021@gmail.com <br>
+                <img src="/nisha/images/insta.avif" alt="" class="img">
+                Instagram id : nishaa
+            </div>
+        </form>
+    </body>
+</html>
